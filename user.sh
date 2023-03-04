@@ -11,4 +11,3 @@ mv user-main user
 cd /home/roboshop/user
 npm install
 
-sed -i -e 's/'
