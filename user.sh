@@ -12,7 +12,7 @@ cd /home/roboshop/user
 npm install
 
 
-sed -i -e 's/REDIS_ENDPOINT/redis.vamsy.online/' -e 's/MONGO.ENDPOINT/mongo.vamsy.online' systemd.service
+sed -i -e 's/REDIS_ENDPOINT/redis.vamsy.online/' -e 's/MONGO.ENDPOINT/mongo.vamsy.online/' /home/roboshop/user/ systemd.service
 
 mv /home/roboshop/user/systemd.service /etc/systemd/system/user.service
 systemctl daemon-reload
