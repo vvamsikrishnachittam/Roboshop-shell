@@ -9,7 +9,6 @@ mv cart-main cart
 cd cart
 npm install
 
-
 sed -e -i 's/REDIS_ENDPOINT/redis.vamsi.online/'  -e 's/MONGO.ENDPOINT/ mongo.vamsy.online/' /home/roboshop/cart/systemd.service
 
 mv /home/roboshop/cart/systemd.service /etc/systemd/system/cart.service
