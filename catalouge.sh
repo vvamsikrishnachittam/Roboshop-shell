@@ -13,7 +13,6 @@ npm install
 
 sed -i -e 's/MONGOD_DNSNAME/mongod.vamsy.online/' systemd.service
 
-
 mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl restart catalogue
