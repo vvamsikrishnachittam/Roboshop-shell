@@ -36,11 +36,7 @@ if [ -z "${SGID}" ]; then
   exit 1
 fi
 
-if [ -z "$1" ]; then
-  echo Input Component Name is needed
-  exit 1
-fi
-
-component=$1
-COMPONENT="${env}-${component}"
-create_ec2
+for component in frontend mongodb catalogue redis user cart MySQL shipping RabbitMq payment Dispatch; do
+    COMPONENT="${env}-${component}"
+    create_ec2
+done
